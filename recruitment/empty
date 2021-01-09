@@ -1,0 +1,15 @@
+#基础信息，学校与学历信息，综合能力测评成绩，笔试测评成绩,
+'userid', 'username', 'city', 'phone', 'email', 'apply_position', 'born_address', 'gender', 'candidate_remark', 'bachelor_school', 'master_school', 'doctor_school', 'major', 'degree', 'test_score_of_general_ability', 'paper_score', 'creator', 'created_date', 'modified_date', 'last_editor',
+
+#第一轮面试记录,
+'first_score', 'first_learning_ability', 'first_professional_competency', 'first_advantage', 'first_disadvantage', 'first_result', 'first_recommend_position', 'first_interviewer', 'first_remark',
+
+#第二轮面试记录,
+'second_score', 'second_learning_ability', 'second_professional_competency', 'second_pursue_of_excellence', 'second_communication_ability', 'second_pressure_score', 'second_advantage', 'second_disadvantage', 'second_result', 'second_recommend_position', 'second_interviewer', 'second_remark',
+
+#HR终面,
+'hr_score', 'hr_responsibility', 'hr_communication_ability', 'hr_logic_ability', 'hr_potential', 'hr_stability', 'hr_advantage', 'hr_disadvantage', 'hr_result', 'hr_interviewer', 'hr_remark',
+
+
+操作过程：
+1、这是将model里面的字段定义复制到此文本，然后使用pycharm的文本替换功能，勾选正则匹配，使用正则表达式删除文本中不要的内容（过程中，为了使用正则$找到行为，需要开启，in selection选项），当拿到所要的内容后，如果需要将内容连接为字符串，可以使用pycharm的edit->join lines功能
