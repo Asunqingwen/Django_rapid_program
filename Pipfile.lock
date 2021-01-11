@@ -1,11 +1,11 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "3b3fd88dd6f4b310b141b0e6ed7aa5236b1a1dac9e0aaebeeabdbddbcc582952"
+            "sha256": "bf0fb54b334886cd693df369b0c0bb537f67ba26f4c66821f3eccf8dd88d9f95"
         },
         "pipfile-spec": 6,
         "requires": {
-            "python_version": "3.8"
+            "python_version": "3.7"
         },
         "sources": [
             {
@@ -31,6 +31,27 @@
             ],
             "index": "pypi",
             "version": "==3.1.5"
+        },
+        "django-python3-ldap": {
+            "hashes": [
+                "sha256:b1e52329bb560e1afdaf67665e767a1dc87d3d15e74088eed4b7726c1a01b994"
+            ],
+            "index": "pypi",
+            "version": "==0.11.3"
+        },
+        "ldap3": {
+            "hashes": [
+                "sha256:37d633e20fa360c302b1263c96fe932d40622d0119f1bddcb829b03462eeeeb7",
+                "sha256:7c3738570766f5e5e74a56fade15470f339d5c436d821cf476ef27da0a4de8b0"
+            ],
+            "version": "==2.8.1"
+        },
+        "pyasn1": {
+            "hashes": [
+                "sha256:39c7e2ec30515947ff4e87fb6f456dfc6e84857d34be479c9d4a4ba4bf46aa5d",
+                "sha256:aef77c9fb94a3ac588e87841208bdec464471d9871bd5050a287cc9a475cd0ba"
+            ],
+            "version": "==0.4.8"
         },
         "pytz": {
             "hashes": [

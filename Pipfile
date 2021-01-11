@@ -12,6 +12,7 @@ verify_ssl = true
 
 [packages]
 django = "*"
+django-python3-ldap = "*"
 
 [requires]
-python_version = "3.8"
+python_version = "3.7"
