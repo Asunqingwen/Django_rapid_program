@@ -29,7 +29,14 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+LOGIN_REDIRECT_URL = '/'
+SIMPLE_BACKEND_REDIRECT_URL = '/accounts/login/'
+
 INSTALLED_APPS = [
+    # 替换默认admin主题
+    'grappelli',
+    # 匿名用户注册和登录
+    'registration',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

@@ -13,6 +13,9 @@ verify_ssl = true
 [packages]
 django = "*"
 django-python3-ldap = "*"
+django-grappelli = "*"
+dingtalkchatbot = "*"
+django-registration-redux = "*"
 
 [requires]
 python_version = "3.7"

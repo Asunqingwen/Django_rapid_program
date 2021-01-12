@@ -1,11 +1,11 @@
 from django.contrib import admin
-from .models import Job
+from .models import Job, Resume
 
 
 # Register your models here.
 class JobAdmin(admin.ModelAdmin):
     '''
-    模型管理类
+    职位管理类
     '''
     exclude = ('creator', 'created_date', 'modified_date')
     list_display = ('job_name', 'job_type', 'job_city', 'creator', 'created_date', 'modified_date')
@@ -15,4 +15,31 @@ class JobAdmin(admin.ModelAdmin):
         super().save_model(request, obj, form, change)
 
 
+class ResumeAdmin(admin.ModelAdmin):
+    '''
+    简历管理类
+    '''
+    # exclude = ('applicant', 'created_date', 'modified_date')
+
+    list_display = (
+        'username', 'applicant', 'city', 'apply_position', 'bachelor_school', 'master_school', 'doctor_school', 'major',
+        'created_date')
+
+    readonly_fields = ('applicant', 'created_date', 'modified_date')
+
+    fieldsets = (
+        (None, {'fields': (
+            "applicant", ("username", "city", "phone", "gender"), ("email", "apply_position", "born_address"),
+            ('bachelor_school', 'master_school', 'doctor_school'), ("major", "degree"),
+            ('created_date', 'modified_date'),
+            "candidate_introduction", "work_experience", "project_experience",
+        )}),
+    )
+
+    def save_model(self, request, obj, form, change):
+        obj.applicant = request.user
+        super().save_model(request, obj, form, change)
+
+
 admin.site.register(Job, JobAdmin)
+admin.site.register(Resume, ResumeAdmin)
