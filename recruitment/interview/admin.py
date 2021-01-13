@@ -5,8 +5,11 @@ from datetime import datetime
 from django.contrib import admin
 from django.db.models import Q
 from django.http import HttpResponse
+from django.contrib import messages
+from django.utils.safestring import mark_safe
 
 from .models import Candidate
+from jobs.models import Resume
 from . import candidate_fieldset as CF
 from . import dingtalk
 import logging
@@ -35,6 +38,7 @@ def notify_interviewer(modeladmin, request, queryset):
         candidates += obj.username + ";"
         interviewers += obj.first_interviewer_user.username + ";"
     dingtalk.send("候选人%s进入面试环节，亲爱的面试官，请准备好面试：%s" % (candidates, interviewers))
+    messages.add_message(request, messages.INFO, '已经成功发送面试通知')
 
 
 notify_interviewer.short_description = u'通知一面面试官'
@@ -82,7 +86,8 @@ export_model_as_csv.allowed_permissions = ('export',)
 class CandidateAdmin(admin.ModelAdmin):
     exclude = ('creator', 'created_date', 'modified_date')
     list_display = (
-        'username', 'city', 'bachelor_school', 'first_score', 'first_result', 'first_interviewer_user', 'second_score',
+        'username', 'city', 'bachelor_school', 'get_resume', 'first_score', 'first_result', 'first_interviewer_user',
+        'second_score',
         'second_result', 'second_interviewer_user', 'hr_score', 'hr_result', 'hr_interviewer_user', 'last_editor',
     )
 
@@ -108,6 +113,18 @@ class CandidateAdmin(admin.ModelAdmin):
 
     # 默认排序
     ordering = ('hr_result', 'second_result', 'first_result')
+
+    def get_resume(self, obj):
+        '''获取简历详情'''
+        if not obj.phone:
+            return ""
+        resumes = Resume.objects.filter(phone=obj.phone)
+        if resumes and len(resumes) > 0:
+            return mark_safe(u'<a href="/resume/%s" target="_blank">%s</a>' % (resumes[0].id, '查看简历'))  #target="_blank"，打开新界面
+        return ""
+
+    get_resume.short_description = u'查看简历'
+    get_resume.allow_tags = True
 
     def get_group_names(self, user):
         '''
@@ -174,6 +191,7 @@ class CandidateAdmin(admin.ModelAdmin):
         return ('last_editor',)
 
     def get_fieldsets(self, request, obj=None):
+        '''面试官只能编辑自己的反馈'''
         group_names = self.get_group_names(request.user)
 
         if 'interviewer' in group_names and obj.first_interviewer_user == request.user:

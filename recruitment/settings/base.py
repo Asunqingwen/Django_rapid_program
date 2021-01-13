@@ -30,11 +30,13 @@ ALLOWED_HOSTS = []
 # Application definition
 
 LOGIN_REDIRECT_URL = '/'
-SIMPLE_BACKEND_REDIRECT_URL = '/accounts/login/'
+# SIMPLE_BACKEND_REDIRECT_URL = '/accounts/login/'
 
 INSTALLED_APPS = [
     # 替换默认admin主题
     'grappelli',
+    # web页面样式
+    'bootstrap4',
     # 匿名用户注册和登录
     'registration',
     'django.contrib.admin',
@@ -47,11 +49,16 @@ INSTALLED_APPS = [
     'interview',
     # 企业域账号集成
     'django_python3_ldap',
+
 ]
 
 MIDDLEWARE = [
+    # 自定义中间件
+    'interview.performance.performance_logger_middleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    # 多语言中间件
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -110,8 +117,19 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
 
+from django.utils.translation import gettext_lazy as _
+
+LANGUAGES = [
+    ('zh-hans', _('Chinese')),
+    ('en', _('English')),
+]
+
 # LANGUAGE_CODE = 'en-us'
 LANGUAGE_CODE = 'zh-hans'
+
+LOCALE_PATHS = (
+    os.path.join(BASE_DIR, 'locale'),
+)
 
 # TIME_ZONE = 'UTC'
 TIME_ZONE = 'Asia/shanghai'
@@ -154,6 +172,14 @@ LOGGING = {
             'formatter': 'simple',
             'filename': os.path.join(os.path.dirname(BASE_DIR), 'recruitment.admin.log'),
         },
+
+        'performance': {
+            # 'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'formatter': 'simple',
+            'filename': os.path.join(os.path.dirname(BASE_DIR), 'recruitment.performance.log'),
+            'encoding': 'utf-8',  # 防止日志中文乱码
+        },
     },
 
     'root': {
@@ -165,6 +191,11 @@ LOGGING = {
         "django_python3_ldap": {
             "handlers": ["console", "file"],
             "level": "DEBUG",
+        },
+        "interview.performance": {
+            "handlers": ["console", "performance"],
+            "level": "INFO",
+            'propagate': False,
         },
     },
 }

@@ -3,7 +3,6 @@
 {% block content %}
 
     <div style="margin: auto;width: 50%;">
-        <a href="/joblist" style="color: blue">返回职位列表</a>
         <p></p>
         {% if job %}
             <div class="position_name">
@@ -11,22 +10,26 @@
                 城市：
                 {{ job.city_name }}<p></p>
             </div>
+
             <hr>
-            <div class="position_responsibility" style="width:600px;">
+            <div class="position_responsibility" style="width:1000px;">
                 <h3>岗位职责：</h3>
                 <pre style="font-size: 16px">{{ job.job_responsibility }}</pre>
                 <p></p>
             </div><br>
 
             <hr>
-            <div class="position_requirement" style="width:600px;">
+            <div class="position_requirement" style="width:1000px;">
                 <h3>任职要求：</h3>
                 <pre style="font-size: 16px">{{ job.job_requirement }}</pre>
                 <p></p>
-            </div><br>
+            </div>
 
             <div class="apply_position">
-                <input type="button" style="width: 120px;background-color: lightblue;" value="申请">
+                <button type="submit" class="btn btn-primary"
+                        onclick="location.href='/resume/add/?apply_position={{ job.job_name }}&city={{ job.city_name }}'">
+                    申请职位
+                </button>
             </div>
 
         {% else %}

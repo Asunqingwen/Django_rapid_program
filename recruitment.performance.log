@@ -1,0 +1,45 @@
+2021-01-13 16:24:41,502 interview.performance 13 INFO     0.11402249336242676 /resume/add/ {'apply_position': '音视频工程师', 'city': '上海'}
+2021-01-13 16:25:30,202 interview.performance 13 INFO     0.12952613830566406 /resume/add/ {'apply_position': '音视频工程师', 'city': '上海'}
+2021-01-13 16:25:49,958 interview.performance 13 INFO     0.034543514251708984 /resume/add/ {'apply_position': '音视频工程师', 'city': '上海'}
+2021-01-13 17:06:08,167 interview.performance 15 INFO     0.10863184928894043 / {}
+2021-01-13 17:07:01,171 interview.performance 15 INFO     0.015999317169189453 / {}
+2021-01-13 17:07:02,570 interview.performance 15 INFO     0.009003639221191406 / {}
+2021-01-13 17:17:29,834 interview.performance 15 INFO     0.04594683647155762 / {}
+2021-01-13 17:18:38,192 interview.performance 15 INFO     0.02099895477294922 / {}
+2021-01-13 17:24:00,396 interview.performance 15 INFO     0.027188777923583984 / {}
+2021-01-13 17:24:03,803 interview.performance 15 INFO     0.12157034873962402 /i18n/setlang/ {}
+2021-01-13 17:24:03,840 interview.performance 15 INFO     0.014747858047485352 / {}
+2021-01-13 17:24:04,861 interview.performance 15 INFO     0.10315704345703125 /i18n/setlang/ {}
+2021-01-13 17:24:04,892 interview.performance 15 INFO     0.012156963348388672 / {}
+2021-01-13 17:24:07,259 interview.performance 15 INFO     0.11176061630249023 /i18n/setlang/ {}
+2021-01-13 17:24:07,290 interview.performance 15 INFO     0.012000322341918945 / {}
+2021-01-13 17:24:08,615 interview.performance 15 INFO     0.104095458984375 /i18n/setlang/ {}
+2021-01-13 17:24:08,647 interview.performance 15 INFO     0.013010740280151367 / {}
+2021-01-13 17:24:09,793 interview.performance 15 INFO     0.07799983024597168 /i18n/setlang/ {}
+2021-01-13 17:24:09,832 interview.performance 15 INFO     0.010046005249023438 / {}
+2021-01-13 17:24:19,583 interview.performance 15 INFO     0.45360422134399414 /i18n/setlang/ {}
+2021-01-13 17:24:19,619 interview.performance 15 INFO     0.012349128723144531 / {}
+2021-01-13 17:24:20,249 interview.performance 15 INFO     0.08614230155944824 /i18n/setlang/ {}
+2021-01-13 17:24:20,282 interview.performance 15 INFO     0.012995481491088867 / {}
+2021-01-13 17:25:41,011 interview.performance 15 INFO     0.04381084442138672 / {}
+2021-01-13 17:25:43,005 interview.performance 15 INFO     0.016019582748413086 / {}
+2021-01-13 17:25:43,790 interview.performance 15 INFO     0.1095738410949707 /i18n/setlang/ {}
+2021-01-13 17:25:43,823 interview.performance 15 INFO     0.012014627456665039 / {}
+2021-01-13 17:25:46,073 interview.performance 15 INFO     0.12449812889099121 /i18n/setlang/ {}
+2021-01-13 17:25:46,120 interview.performance 15 INFO     0.01867198944091797 / {}
+2021-01-13 17:25:50,507 interview.performance 15 INFO     0.11466050148010254 /i18n/setlang/ {}
+2021-01-13 17:25:50,536 interview.performance 15 INFO     0.010687589645385742 / {}
+2021-01-13 17:26:13,573 interview.performance 15 INFO     0.10376906394958496 /i18n/setlang/ {}
+2021-01-13 17:26:13,613 interview.performance 15 INFO     0.018281936645507812 / {}
+2021-01-13 17:26:21,143 interview.performance 15 INFO     2.3727262020111084 /admin/ {}
+2021-01-13 17:26:24,151 interview.performance 15 INFO     0.02805805206298828 /admin/auth/ {}
+2021-01-13 17:26:25,045 interview.performance 15 INFO     0.13347792625427246 /admin/auth/group/ {}
+2021-01-13 17:26:25,111 interview.performance 15 INFO     0.014000892639160156 /admin/jsi18n/ {}
+2021-01-13 17:26:26,114 interview.performance 15 INFO     0.01900649070739746 /admin/auth/ {}
+2021-01-13 17:26:26,837 interview.performance 15 INFO     0.02414226531982422 /admin/ {}
+2021-01-13 17:26:27,999 interview.performance 15 INFO     0.16574740409851074 /admin/interview/candidate/ {}
+2021-01-13 17:26:28,087 interview.performance 15 INFO     0.0135345458984375 /admin/jsi18n/ {}
+2021-01-13 17:26:30,515 interview.performance 15 INFO     0.020747661590576172 /admin/ {}
+2021-01-13 17:28:22,206 interview.performance 15 INFO     0.009631872177124023 / {}
+2021-01-13 17:28:26,287 interview.performance 15 INFO     0.10123777389526367 /i18n/setlang/ {}
+2021-01-13 17:28:26,328 interview.performance 15 INFO     0.015997886657714844 / {}

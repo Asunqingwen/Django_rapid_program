@@ -16,6 +16,7 @@ django-python3-ldap = "*"
 django-grappelli = "*"
 dingtalkchatbot = "*"
 django-registration-redux = "*"
+django-bootstrap4 = "*"
 
 [requires]
 python_version = "3.7"
