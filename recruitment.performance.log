@@ -43,3 +43,148 @@
 2021-01-13 17:28:22,206 interview.performance 15 INFO     0.009631872177124023 / {}
 2021-01-13 17:28:26,287 interview.performance 15 INFO     0.10123777389526367 /i18n/setlang/ {}
 2021-01-13 17:28:26,328 interview.performance 15 INFO     0.015997886657714844 / {}
+2021-01-14 13:30:43,380 interview.performance 15 INFO     0.09896445274353027 / {}
+2021-01-14 13:30:43,739 interview.performance 15 INFO     0.10499978065490723 /favicon.ico {}
+2021-01-14 13:30:57,621 interview.performance 15 INFO     0.0 /sentry-debug {}
+2021-01-14 13:30:59,843 interview.performance 15 INFO     2.197068214416504 /sentry-debug/ {}
+2021-01-14 13:32:41,893 interview.performance 15 INFO     0.06485795974731445 /admin/ {}
+2021-01-14 13:32:42,659 interview.performance 15 INFO     0.023999452590942383 /admin/ {}
+2021-01-14 13:32:45,789 interview.performance 15 INFO     0.25630974769592285 /admin/interview/candidate/ {}
+2021-01-14 13:32:45,901 interview.performance 15 INFO     0.02834320068359375 /admin/jsi18n/ {}
+2021-01-14 13:34:18,739 interview.performance 15 INFO     0.11126017570495605 /admin/interview/candidate/ {}
+2021-01-14 14:49:56,720 interview.performance 38 INFO     0.43056225776672363 /admin/interview/candidate/5/change/ {}
+2021-01-14 14:49:56,814 interview.performance 38 INFO     0.013003826141357422 /admin/jsi18n/ {}
+2021-01-14 14:49:58,198 interview.performance 38 INFO     0.19653797149658203 /admin/interview/candidate/ {}
+2021-01-14 14:50:19,312 interview.performance 38 INFO     0.0 /resume/9 {}
+2021-01-14 14:50:19,366 interview.performance 55 WARNING  url:http://127.0.0.1:8000/resume/9/ ** msg:Http404('没有找到符合查询的 简历') ````Traceback (most recent call last):
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\views\generic\detail.py", line 52, in get_object
+    obj = queryset.get()
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\models\query.py", line 431, in get
+    self.model._meta.object_name
+jobs.models.Resume.DoesNotExist: Resume matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\sentry_sdk\integrations\django\views.py", line 67, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\views\generic\detail.py", line 106, in get
+    self.object = self.get_object()
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\views\generic\detail.py", line 55, in get_object
+    {'verbose_name': queryset.model._meta.verbose_name})
+django.http.response.Http404: 没有找到符合查询的 简历
+````
+2021-01-14 14:50:19,675 interview.performance 38 INFO     0.33974123001098633 /resume/9/ {}
+2021-01-14 14:52:01,883 interview.performance 38 INFO     0.03423500061035156 / {}
+2021-01-14 15:00:58,826 interview.performance 38 INFO     0.0019981861114501953 /detail_resume/2 {}
+2021-01-14 15:00:58,872 interview.performance 38 INFO     0.01199650764465332 /detail_resume/2/ {}
+2021-01-14 15:03:52,151 interview.performance 38 INFO     0.041376590728759766 / {}
+2021-01-14 15:03:57,325 interview.performance 38 INFO     0.1356494426727295 /accounts/logout/ {}
+2021-01-14 15:03:58,457 interview.performance 38 INFO     0.025005578994750977 /accounts/login/ {}
+2021-01-14 15:04:00,475 interview.performance 38 INFO     0.05458807945251465 /accounts/register/ {}
+2021-01-14 15:04:33,378 interview.performance 38 INFO     0.7027268409729004 /accounts/register/ {}
+2021-01-14 15:04:33,409 interview.performance 38 INFO     0.012001991271972656 / {}
+2021-01-14 15:04:37,715 interview.performance 38 INFO     0.010350942611694336 /joblist/ {}
+2021-01-14 15:04:40,113 interview.performance 38 INFO     0.0574953556060791 /job/2/ {}
+2021-01-14 15:04:41,303 interview.performance 38 INFO     0.10621953010559082 /resume/add/ {'apply_position': '高级移动开发工程师', 'city': '北京'}
+2021-01-14 15:06:33,835 interview.performance 38 INFO     0.10100769996643066 /resume/add/ {'apply_position': '高级移动开发工程师', 'city': '北京'}
+2021-01-14 15:06:33,876 interview.performance 38 INFO     0.010337114334106445 /joblist/ {}
+2021-01-14 15:06:39,471 interview.performance 38 INFO     0.009998798370361328 /admin/ {}
+2021-01-14 15:06:39,640 interview.performance 38 INFO     0.1467418670654297 /admin/login/ {'next': '/admin/'}
+2021-01-14 15:06:42,733 interview.performance 38 INFO     0.0030002593994140625 /admin/ {}
+2021-01-14 15:06:42,780 interview.performance 38 INFO     0.01583123207092285 /admin/login/ {'next': '/admin/'}
+2021-01-14 15:06:45,947 interview.performance 38 INFO     0.37361764907836914 /admin/login/ {'next': '/admin/'}
+2021-01-14 15:06:45,999 interview.performance 38 INFO     0.02443718910217285 /admin/ {}
+2021-01-14 15:06:47,855 interview.performance 38 INFO     0.17548394203186035 /admin/interview/candidate/ {}
+2021-01-14 15:06:47,915 interview.performance 38 INFO     0.012470722198486328 /admin/jsi18n/ {}
+2021-01-14 15:06:54,244 interview.performance 38 INFO     0.01971602439880371 /admin/ {}
+2021-01-14 15:06:56,145 interview.performance 38 INFO     0.050864458084106445 /admin/jobs/resume/ {}
+2021-01-14 15:06:56,223 interview.performance 38 INFO     0.011138677597045898 /admin/jsi18n/ {}
+2021-01-14 15:07:01,669 interview.performance 38 INFO     0.10015201568603516 /admin/jobs/resume/ {}
+2021-01-14 15:07:01,739 interview.performance 38 INFO     0.0485072135925293 /admin/jobs/resume/ {}
+2021-01-14 15:07:01,791 interview.performance 38 INFO     0.010001420974731445 /admin/jsi18n/ {}
+2021-01-14 15:07:03,477 interview.performance 38 INFO     0.025197505950927734 /admin/ {}
+2021-01-14 15:07:04,682 interview.performance 38 INFO     0.07236504554748535 /admin/auth/user/ {}
+2021-01-14 15:07:04,742 interview.performance 38 INFO     0.008836030960083008 /admin/jsi18n/ {}
+2021-01-14 15:07:06,107 interview.performance 38 INFO     0.024956941604614258 /admin/ {}
+2021-01-14 15:07:07,414 interview.performance 38 INFO     0.14120745658874512 /admin/interview/candidate/ {}
+2021-01-14 15:07:07,468 interview.performance 38 INFO     0.010605335235595703 /admin/jsi18n/ {}
+2021-01-14 15:07:18,969 interview.performance 38 INFO     0.001001596450805664 /resume/3 {}
+2021-01-14 15:07:19,051 interview.performance 38 INFO     0.05667996406555176 /resume/3/ {}
+2021-01-14 15:08:13,351 interview.performance 38 INFO     0.0 /detail_resume/3 {}
+2021-01-14 15:08:13,390 interview.performance 38 INFO     0.0040204524993896484 /detail_resume/3/ {}
+2021-01-14 15:08:32,548 interview.performance 38 INFO     0.002006053924560547 /detail_resume/3/ {}
+2021-01-14 15:28:19,596 interview.performance 38 INFO     0.17858099937438965 /admin/ {}
+2021-01-14 15:28:20,147 interview.performance 38 INFO     0.027077913284301758 /admin/ {}
+2021-01-14 15:28:36,590 interview.performance 38 INFO     0.011577129364013672 /create_hr_user/ {}
+2021-01-14 15:29:58,543 interview.performance 38 INFO     0.28986024856567383 /create_hr_user/ {}
+2021-01-14 15:30:23,545 interview.performance 38 INFO     0.08286499977111816 /admin/auth/user/ {}
+2021-01-14 15:30:23,612 interview.performance 38 INFO     0.014000177383422852 /admin/jsi18n/ {}
+2021-01-14 15:38:18,386 interview.performance 38 INFO     0.2527930736541748 /create_hr_user/ {}
+2021-01-14 15:38:30,906 interview.performance 38 INFO     0.06592917442321777 /admin/auth/user/ {}
+2021-01-14 15:38:30,952 interview.performance 38 INFO     0.00786733627319336 /admin/jsi18n/ {}
+2021-01-14 15:40:38,841 interview.performance 38 INFO     0.02149176597595215 /create_hr_user/ {}
+2021-01-14 15:41:50,394 interview.performance 38 INFO     0.18889069557189941 /admin/ {}
+2021-01-14 15:41:56,432 interview.performance 38 INFO     0.008026361465454102 /create_hr_user/ {}
+2021-01-14 15:42:13,414 interview.performance 38 INFO     0.008200407028198242 /create_hr_user/ {}
+2021-01-14 15:42:19,757 interview.performance 38 INFO     0.010841846466064453 /create_hr_user/ {}
+2021-01-14 15:42:25,189 interview.performance 38 INFO     0.004111528396606445 /create_hr_user/ {}
+2021-01-14 15:42:29,574 interview.performance 38 INFO     0.0029878616333007812 /create_hr_user/ {}
+2021-01-14 15:42:31,795 interview.performance 38 INFO     0.0069997310638427734 /create_hr_user/ {}
+2021-01-14 15:42:35,539 interview.performance 38 INFO     0.00299835205078125 /create_hr_user/ {}
+2021-01-14 15:42:39,997 interview.performance 38 INFO     0.007693767547607422 /create_hr_user/ {}
+2021-01-14 15:42:41,963 interview.performance 38 INFO     0.007039546966552734 /create_hr_user/ {}
+2021-01-14 15:42:59,138 interview.performance 38 INFO     0.008708000183105469 /create_hr_user/ {}
+2021-01-14 15:42:59,904 interview.performance 38 INFO     0.011281251907348633 /create_hr_user/ {}
+2021-01-14 15:43:00,202 interview.performance 38 INFO     0.012999773025512695 /create_hr_user/ {}
+2021-01-14 15:43:00,443 interview.performance 38 INFO     0.011998653411865234 /create_hr_user/ {}
+2021-01-14 15:43:00,811 interview.performance 38 INFO     0.013512849807739258 /create_hr_user/ {}
+2021-01-14 15:43:01,079 interview.performance 38 INFO     0.014755725860595703 /create_hr_user/ {}
+2021-01-14 15:43:04,309 interview.performance 38 INFO     0.0019788742065429688 /create_hr_user/ {}
+2021-01-14 15:43:06,107 interview.performance 38 INFO     0.003992319107055664 /create_hr_user/ {}
+2021-01-14 15:43:07,829 interview.performance 38 INFO     0.009098291397094727 /create_hr_user/ {}
+2021-01-14 15:59:24,727 interview.performance 38 INFO     0.026007890701293945 /aip {}
+2021-01-14 15:59:29,273 interview.performance 38 INFO     0.0 /api {}
+2021-01-14 15:59:29,340 interview.performance 38 INFO     0.043992042541503906 /api/ {}
+2021-01-14 15:59:33,538 interview.performance 38 INFO     0.04933524131774902 /api/users/ {}
+2021-01-14 15:59:35,815 interview.performance 38 INFO     0.04966092109680176 /api/jobs/ {}
+2021-01-14 15:59:48,733 interview.performance 38 INFO     0.04504990577697754 /api/jobs/ {}
+2021-01-14 15:59:50,604 interview.performance 38 INFO     0.05308723449707031 /api/jobs/1/ {}
+2021-01-14 15:59:52,487 interview.performance 38 INFO     0.04767942428588867 /api/jobs/1/ {}
+2021-01-14 16:01:30,620 interview.performance 38 INFO     0.007731437683105469 /api/ {'format': 'json'}
+2021-01-14 16:01:44,202 interview.performance 38 INFO     0.09665393829345703 /api-auth/logout/ {'next': '/api/'}
+2021-01-14 16:01:44,233 interview.performance 38 INFO     0.010024309158325195 /api/ {}
+2021-01-14 16:01:45,491 interview.performance 38 INFO     0.013763666152954102 /api-auth/login/ {'next': '/api/'}
+2021-01-14 16:01:50,041 interview.performance 38 INFO     0.5075013637542725 /api-auth/login/ {}
+2021-01-14 16:01:50,077 interview.performance 38 INFO     0.013907909393310547 /api/ {}
+2021-01-14 16:01:56,047 interview.performance 38 INFO     0.0482025146484375 /api/jobs/ {}
+2021-01-14 16:10:12,218 interview.performance 38 INFO     0.1881084442138672 /admin/ {}
+2021-01-14 16:10:15,339 interview.performance 38 INFO     0.16709160804748535 /admin/interview/candidate/ {}
+2021-01-14 16:10:15,403 interview.performance 38 INFO     0.011001110076904297 /admin/jsi18n/ {}
+2021-01-14 16:10:16,854 interview.performance 38 INFO     0.004991769790649414 /resume/2/ {}
+2021-01-14 16:10:36,263 interview.performance 38 INFO     0.008999824523925781 /resume/2/ {}
+2021-01-14 16:12:51,463 interview.performance 38 INFO     0.07415246963500977 /resume/2/ {}
+2021-01-14 16:14:09,902 interview.performance 38 INFO     0.18393754959106445 /admin/ {}
+2021-01-14 16:14:12,633 interview.performance 38 INFO     0.05195283889770508 /admin/jobs/job/ {}
+2021-01-14 16:14:12,695 interview.performance 38 INFO     0.016635656356811523 /admin/jsi18n/ {}
+2021-01-14 16:14:17,530 interview.performance 38 INFO     0.04200339317321777 /admin/jobs/job/2/change/ {}
+2021-01-14 16:14:29,389 interview.performance 38 INFO     0.01642632484436035 / {}
+2021-01-14 16:14:30,586 interview.performance 38 INFO     0.016043663024902344 /job/1/ {}
+2021-01-14 16:19:18,180 interview.performance 38 INFO     0.012920618057250977 /job/1/ {}
+2021-01-14 16:19:37,859 interview.performance 38 INFO     0.05411362648010254 /joblist/ {}
+2021-01-14 16:19:42,791 interview.performance 38 INFO     0.01641225814819336 /job/2/ {}
+2021-01-14 16:19:48,252 interview.performance 38 INFO     0.0025987625122070312 /job/2/ {}
+2021-01-14 18:30:21,427 interview.performance 38 INFO     0.1274402141571045 / {}
+2021-01-14 18:30:42,652 interview.performance 38 INFO     0.052121877670288086 /job/2/ {}
+2021-01-14 18:30:56,056 interview.performance 38 INFO     2.1929898262023926 /admin/ {}
+2021-01-14 18:30:56,098 interview.performance 38 INFO     0.03800010681152344 /admin/ {}
+2021-01-14 18:30:59,009 interview.performance 38 INFO     0.18134665489196777 /admin/interview/candidate/ {}
+2021-01-14 18:30:59,104 interview.performance 38 INFO     0.022617578506469727 /admin/jsi18n/ {}
+2021-01-14 18:31:12,925 interview.performance 38 INFO     6.233999967575073 /admin/interview/candidate/ {}
+2021-01-14 18:31:13,110 interview.performance 38 INFO     0.16305208206176758 /admin/interview/candidate/ {}

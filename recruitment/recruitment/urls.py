@@ -18,6 +18,47 @@ from django.urls import path
 from django.conf.urls import url, include
 from django.utils.translation import gettext as _  # 多语言翻译
 
+from django.urls import path
+
+from jobs.models import Job
+from django.contrib.auth.models import User
+from rest_framework import routers, serializers, viewsets
+
+
+# Serializers define the API representation.
+class UserSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = User
+        fields = ['url', 'username', 'email', 'is_staff']
+
+
+# ViewSets define the view behavior.
+class UserViewSet(viewsets.ModelViewSet):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
+
+
+class JobSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = Job
+        fields = '__all__'
+
+
+class JobViewSet(viewsets.ModelViewSet):
+    queryset = Job.objects.all()
+    serializer_class = JobSerializer
+
+
+# Routers provide an easy way of automatically determining the URL conf.
+router = routers.DefaultRouter()
+router.register(r'users', UserViewSet)
+router.register(r'jobs', JobViewSet)
+
+
+def trigger_error(request):
+    division_by_zero = 1 / 0
+
+
 urlpatterns = [
     url(r'^', include('jobs.urls')),
     path('grappelli/', include('grappelli.urls')),
@@ -26,6 +67,12 @@ urlpatterns = [
     url(r'^accounts/', include('registration.backends.simple.urls')),
 
     path('i18n/', include('django.conf.urls.i18n')),
+
+    path('api/', include(router.urls)),
+    path('api-auth/', include('rest_framework.urls')),
+
+    # sentry测试
+    path('sentry-debug/', trigger_error),
 ]
 
 admin.site.site_header = _('银河系科技招聘系统')

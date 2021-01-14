@@ -17,6 +17,17 @@ django-grappelli = "*"
 dingtalkchatbot = "*"
 django-registration-redux = "*"
 django-bootstrap4 = "*"
+sentry-sdk = "*"
+djangorestframework = "*"
+markdown = "*"
+django-filter = "*"
+django-redis = "*"
+flower = "*"
+celery = {extras = ["auth", "msgpack", "redis"], version = "==4.4.7"}
+eventlet = "*"
 
 [requires]
 python_version = "3.7"
+
+[pipenv]
+allow_prereleases = true

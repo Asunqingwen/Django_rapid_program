@@ -11,7 +11,8 @@ from django.utils.safestring import mark_safe
 from .models import Candidate
 from jobs.models import Resume
 from . import candidate_fieldset as CF
-from . import dingtalk
+# from . import dingtalk
+from .tasks import send_dingtalk_message
 import logging
 
 # Register your models here.
@@ -37,7 +38,8 @@ def notify_interviewer(modeladmin, request, queryset):
     for obj in queryset:
         candidates += obj.username + ";"
         interviewers += obj.first_interviewer_user.username + ";"
-    dingtalk.send("候选人%s进入面试环节，亲爱的面试官，请准备好面试：%s" % (candidates, interviewers))
+    # dingtalk.send("候选人%s进入面试环节，亲爱的面试官，请准备好面试：%s" % (candidates, interviewers))
+    send_dingtalk_message.delay("候选人%s进入面试环节，亲爱的面试官，请准备好面试：%s" % (candidates, interviewers))
     messages.add_message(request, messages.INFO, '已经成功发送面试通知')
 
 
@@ -120,7 +122,8 @@ class CandidateAdmin(admin.ModelAdmin):
             return ""
         resumes = Resume.objects.filter(phone=obj.phone)
         if resumes and len(resumes) > 0:
-            return mark_safe(u'<a href="/resume/%s" target="_blank">%s</a>' % (resumes[0].id, '查看简历'))  #target="_blank"，打开新界面
+            return mark_safe(
+                u'<a href="/resume/%s" target="_blank">%s</a>' % (resumes[0].id, '查看简历'))  # target="_blank"，打开新界面
         return ""
 
     get_resume.short_description = u'查看简历'

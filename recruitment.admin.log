@@ -698,3 +698,103 @@ django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 9: 'bo
 2021-01-13 17:25:24,478 django.utils.autoreload 617 INFO     Watching for file changes with StatReloader
 2021-01-13 17:25:34,651 django.utils.autoreload 240 INFO     D:\PythonProject\Django_rapid_program\recruitment\settings\base.py changed, reloading.
 2021-01-13 17:25:35,840 django.utils.autoreload 617 INFO     Watching for file changes with StatReloader
+2021-01-14 13:30:37,998 django.utils.autoreload 617 INFO     Watching for file changes with StatReloader
+2021-01-14 13:30:43,739 django.request 230 WARNING  Not Found: /favicon.ico
+2021-01-14 13:30:59,841 django.request 230 ERROR    Internal Server Error: /sentry-debug/
+Traceback (most recent call last):
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\sentry_sdk\integrations\django\views.py", line 67, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+  File "D:\PythonProject\Django_rapid_program\recruitment\recruitment\urls.py", line 25, in trigger_error
+    division_by_zero = 1 / 0
+ZeroDivisionError: division by zero
+2021-01-14 13:33:58,455 django.utils.autoreload 240 INFO     D:\PythonProject\Django_rapid_program\recruitment\interview\admin.py changed, reloading.
+2021-01-14 13:34:00,255 django.utils.autoreload 617 INFO     Watching for file changes with StatReloader
+2021-01-14 13:34:18,651 interview.admin 76 ERROR    admin exported 2 candidate records
+2021-01-14 14:34:22,243 django.utils.autoreload 240 INFO     D:\PythonProject\Django_rapid_program\recruitment\interview\performance.py changed, reloading.
+2021-01-14 14:34:23,759 django.utils.autoreload 617 INFO     Watching for file changes with StatReloader
+2021-01-14 14:36:47,717 django.utils.autoreload 240 INFO     D:\PythonProject\Django_rapid_program\recruitment\interview\admin.py changed, reloading.
+2021-01-14 14:36:48,854 django.utils.autoreload 617 INFO     Watching for file changes with StatReloader
+2021-01-14 14:37:43,584 django.utils.autoreload 240 INFO     D:\PythonProject\Django_rapid_program\recruitment\interview\performance.py changed, reloading.
+2021-01-14 14:37:44,894 django.utils.autoreload 617 INFO     Watching for file changes with StatReloader
+2021-01-14 14:39:32,075 django.utils.autoreload 240 INFO     D:\PythonProject\Django_rapid_program\recruitment\interview\performance.py changed, reloading.
+2021-01-14 14:39:33,320 django.utils.autoreload 617 INFO     Watching for file changes with StatReloader
+2021-01-14 14:41:19,150 django.utils.autoreload 240 INFO     D:\PythonProject\Django_rapid_program\recruitment\interview\performance.py changed, reloading.
+2021-01-14 14:41:20,381 django.utils.autoreload 617 INFO     Watching for file changes with StatReloader
+2021-01-14 14:41:31,720 django.utils.autoreload 240 INFO     D:\PythonProject\Django_rapid_program\recruitment\interview\performance.py changed, reloading.
+2021-01-14 14:41:33,028 django.utils.autoreload 617 INFO     Watching for file changes with StatReloader
+2021-01-14 14:42:46,413 django.utils.autoreload 240 INFO     D:\PythonProject\Django_rapid_program\recruitment\interview\performance.py changed, reloading.
+2021-01-14 14:42:47,536 django.utils.autoreload 617 INFO     Watching for file changes with StatReloader
+2021-01-14 14:46:04,167 django.utils.autoreload 240 INFO     D:\PythonProject\Django_rapid_program\recruitment\interview\performance.py changed, reloading.
+2021-01-14 14:46:05,727 django.utils.autoreload 617 INFO     Watching for file changes with StatReloader
+2021-01-14 14:48:04,926 django.utils.autoreload 240 INFO     D:\PythonProject\Django_rapid_program\recruitment\interview\performance.py changed, reloading.
+2021-01-14 14:48:06,175 django.utils.autoreload 617 INFO     Watching for file changes with StatReloader
+2021-01-14 14:48:22,850 django.utils.autoreload 240 INFO     D:\PythonProject\Django_rapid_program\recruitment\interview\performance.py changed, reloading.
+2021-01-14 14:48:24,332 django.utils.autoreload 617 INFO     Watching for file changes with StatReloader
+2021-01-14 14:49:14,861 django.utils.autoreload 240 INFO     D:\PythonProject\Django_rapid_program\recruitment\settings\base.py changed, reloading.
+2021-01-14 14:49:16,002 django.utils.autoreload 617 INFO     Watching for file changes with StatReloader
+2021-01-14 14:50:19,675 django.request 230 ERROR    Internal Server Error: /resume/9/
+2021-01-14 14:56:21,834 django.utils.autoreload 240 INFO     D:\PythonProject\Django_rapid_program\recruitment\jobs\views.py changed, reloading.
+2021-01-14 14:56:22,954 django.utils.autoreload 617 INFO     Watching for file changes with StatReloader
+2021-01-14 14:57:36,354 django.utils.autoreload 240 INFO     D:\PythonProject\Django_rapid_program\recruitment\jobs\urls.py changed, reloading.
+2021-01-14 14:57:37,798 django.utils.autoreload 617 INFO     Watching for file changes with StatReloader
+2021-01-14 14:58:02,127 django.utils.autoreload 240 INFO     D:\PythonProject\Django_rapid_program\recruitment\jobs\urls.py changed, reloading.
+2021-01-14 14:58:03,216 django.utils.autoreload 617 INFO     Watching for file changes with StatReloader
+2021-01-14 15:00:31,396 django.utils.autoreload 240 INFO     D:\PythonProject\Django_rapid_program\recruitment\jobs\urls.py changed, reloading.
+2021-01-14 15:00:32,583 django.utils.autoreload 617 INFO     Watching for file changes with StatReloader
+2021-01-14 15:22:12,214 django.utils.autoreload 240 INFO     D:\PythonProject\Django_rapid_program\recruitment\jobs\views.py changed, reloading.
+2021-01-14 15:22:13,481 django.utils.autoreload 617 INFO     Watching for file changes with StatReloader
+2021-01-14 15:23:23,177 django.utils.autoreload 240 INFO     D:\PythonProject\Django_rapid_program\recruitment\jobs\views.py changed, reloading.
+2021-01-14 15:23:24,341 django.utils.autoreload 617 INFO     Watching for file changes with StatReloader
+2021-01-14 15:27:58,830 django.utils.autoreload 240 INFO     D:\PythonProject\Django_rapid_program\recruitment\jobs\urls.py changed, reloading.
+2021-01-14 15:27:59,940 django.utils.autoreload 617 INFO     Watching for file changes with StatReloader
+2021-01-14 15:40:24,469 django.utils.autoreload 240 INFO     D:\PythonProject\Django_rapid_program\recruitment\jobs\views.py changed, reloading.
+2021-01-14 15:40:25,707 django.utils.autoreload 617 INFO     Watching for file changes with StatReloader
+2021-01-14 15:40:38,840 django.security.csrf 230 WARNING  Forbidden (CSRF token missing or incorrect.): /create_hr_user/
+2021-01-14 15:42:25,187 django.security.csrf 230 WARNING  Forbidden (CSRF token missing or incorrect.): /create_hr_user/
+2021-01-14 15:42:29,573 django.security.csrf 230 WARNING  Forbidden (CSRF token missing or incorrect.): /create_hr_user/
+2021-01-14 15:42:35,539 django.security.csrf 230 WARNING  Forbidden (CSRF token missing or incorrect.): /create_hr_user/
+2021-01-14 15:43:04,309 django.security.csrf 230 WARNING  Forbidden (CSRF token missing or incorrect.): /create_hr_user/
+2021-01-14 15:43:06,106 django.security.csrf 230 WARNING  Forbidden (CSRF token missing or incorrect.): /create_hr_user/
+2021-01-14 15:50:13,216 django.utils.autoreload 240 INFO     D:\PythonProject\Django_rapid_program\recruitment\settings\base.py changed, reloading.
+2021-01-14 15:50:14,222 django.utils.autoreload 617 INFO     Watching for file changes with StatReloader
+2021-01-14 15:59:16,778 django.utils.autoreload 617 INFO     Watching for file changes with StatReloader
+2021-01-14 15:59:24,727 django.request 230 WARNING  Not Found: /aip
+2021-01-14 16:10:11,543 django.utils.autoreload 617 INFO     Watching for file changes with StatReloader
+2021-01-14 16:11:41,291 django.utils.autoreload 240 INFO     D:\PythonProject\Django_rapid_program\recruitment\settings\base.py changed, reloading.
+2021-01-14 16:11:42,473 django.utils.autoreload 617 INFO     Watching for file changes with StatReloader
+2021-01-14 16:12:06,680 django.utils.autoreload 240 INFO     D:\PythonProject\Django_rapid_program\recruitment\settings\base.py changed, reloading.
+2021-01-14 16:12:07,904 django.utils.autoreload 617 INFO     Watching for file changes with StatReloader
+2021-01-14 16:12:43,393 django.utils.autoreload 240 INFO     D:\PythonProject\Django_rapid_program\recruitment\settings\base.py changed, reloading.
+2021-01-14 16:12:44,496 django.utils.autoreload 617 INFO     Watching for file changes with StatReloader
+2021-01-14 16:15:38,622 django.utils.autoreload 240 INFO     D:\PythonProject\Django_rapid_program\recruitment\jobs\views.py changed, reloading.
+2021-01-14 16:15:39,805 django.utils.autoreload 617 INFO     Watching for file changes with StatReloader
+2021-01-14 16:16:00,550 django.utils.autoreload 240 INFO     D:\PythonProject\Django_rapid_program\recruitment\jobs\views.py changed, reloading.
+2021-01-14 16:16:02,093 django.utils.autoreload 617 INFO     Watching for file changes with StatReloader
+2021-01-14 16:16:25,351 django.utils.autoreload 240 INFO     D:\PythonProject\Django_rapid_program\recruitment\jobs\views.py changed, reloading.
+2021-01-14 16:16:26,677 django.utils.autoreload 617 INFO     Watching for file changes with StatReloader
+2021-01-14 16:16:37,373 django.utils.autoreload 240 INFO     D:\PythonProject\Django_rapid_program\recruitment\jobs\views.py changed, reloading.
+2021-01-14 16:16:38,843 django.utils.autoreload 617 INFO     Watching for file changes with StatReloader
+2021-01-14 16:19:42,777 jobs.views   38 INFO     job info fetched from database jobid:2
+2021-01-14 16:20:19,131 django.utils.autoreload 240 INFO     D:\PythonProject\Django_rapid_program\recruitment\jobs\views.py changed, reloading.
+2021-01-14 16:20:20,345 django.utils.autoreload 617 INFO     Watching for file changes with StatReloader
+2021-01-14 18:28:46,662 django.utils.autoreload 617 INFO     Watching for file changes with StatReloader
+2021-01-14 18:29:50,435 flower.command 137 INFO     Visit me at http://localhost:5555
+2021-01-14 18:29:50,451 flower.command 142 INFO     Broker: redis://localhost:6379/0
+2021-01-14 18:29:50,455 flower.command 145 INFO     Registered tasks: 
+['celery.accumulate',
+ 'celery.backend_cleanup',
+ 'celery.chain',
+ 'celery.chord',
+ 'celery.chord_unlock',
+ 'celery.chunks',
+ 'celery.group',
+ 'celery.map',
+ 'celery.starmap',
+ 'interview.tasks.send_dingtalk_message',
+ 'recruitment.celery.debug_task']
+2021-01-14 18:29:54,479 kombu.mixins 229 INFO     Connected to redis://localhost:6379/0
+2021-01-14 18:30:42,604 jobs.views   38 INFO     job info fetched from database jobid:2
