@@ -23,6 +23,8 @@ from django.urls import path
 from jobs.models import Job
 from django.contrib.auth.models import User
 from rest_framework import routers, serializers, viewsets
+from django.conf.urls.static import static
+from django.conf import settings
 
 
 # Serializers define the API representation.
@@ -73,6 +75,18 @@ urlpatterns = [
 
     # sentry测试
     path('sentry-debug/', trigger_error),
+
+    # django-smart-selects
+    # path('chaining/', include('smart_selects.urls'))
 ]
+
+if settings.DEBUG:
+    import debug_toolbar
+
+    urlpatterns = [
+                      path('__debug__/', include(debug_toolbar.urls)),
+                  ] + urlpatterns
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 admin.site.site_header = _('银河系科技招聘系统')

@@ -7,11 +7,22 @@ ALLOWED_HOSTS = []
 ## 务必修改以下值，确保运行时系统安全:
 SECRET_KEY = "w$46bks+b3-7f(13#i%v@jwejrnxc$^^#@#@^t@fofizy1^mo9r8(-939243423300"
 
+# # AliCloud access key ID
+# OSS_ACCESS_KEY_ID = os.environ.get('OSS_ACCESS_KEY_ID','')
+# # AliCloud access key secret
+# OSS_ACCESS_KEY_SECRET = os.environ.get('OSS_ACCESS_KEY_SECRET','')
+# # The name of the bucket to store files in
+# OSS_BUCKET_NAME = 'djangorecruit'
+#
+# # The URL of AliCloud OSS endpoint
+# # Refer https://www.alibabacloud.com/help/zh/doc-detail/31837.htm for OSS Region & Endpoint
+# OSS_ENDPOINT = 'oss-cn-beijing.aliyuncs.com'
+
 DINGTALK_WEB_HOOK = 'https://oapi.dingtalk.com/robot/send?access_token=f51af59c165a1f1ab08f3d9e5f04098c424a346e25f50efd57cbfe97b10b2dcd'
 
 ## 如果仅使用数据库中的账号，以下 LDAP 配置可忽略
 ## 替换这里的配置为正确的域服务器配置，同时可能需要修改 base.py 中的 LDAP 服务器相关配置:
-LDAP_AUTH_URL = "ldap://xxxx:389"
+LDAP_AUTH_URL = "ldap://47.103.86.8:389"
 LDAP_AUTH_CONNECTION_USERNAME = "admin"
 LDAP_AUTH_CONNECTION_PASSWORD = "admin"
 
@@ -49,7 +60,7 @@ from sentry_sdk.integrations.django import DjangoIntegration
 
 # sentry配置
 sentry_sdk.init(
-    dsn="http://1a12d66d68df409997c149f3e8554d49@xxxx:9000/7",
+    dsn="http://1a12d66d68df409997c149f3e8554d49@47.103.86.8:9000/7",
     integrations=[DjangoIntegration()],
 
     # 采样率，生产环境访问量过大时，建议调小（不用没一个url请求都记录性能）

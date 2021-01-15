@@ -88,7 +88,7 @@ class ResumeCreateView(LoginRequiredMixin, CreateView):
     success_url = '/joblist/'
     model = Resume
     fields = ["username", "city", "phone", "gender", "email", "apply_position",
-              'bachelor_school', 'master_school', 'doctor_school', "major", "degree",
+              'bachelor_school', 'master_school', 'doctor_school', "major", "degree", "picture", "attachment",
               "candidate_introduction", "work_experience", "project_experience"]
 
     def get_initial(self):

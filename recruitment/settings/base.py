@@ -32,6 +32,18 @@ ALLOWED_HOSTS = []
 LOGIN_REDIRECT_URL = '/'
 # SIMPLE_BACKEND_REDIRECT_URL = '/accounts/login/'
 
+# django常用插件
+'''
+django debug toolbar  提供一个debug信息查看界面
+django-silk     性能瓶颈分析
+simple ui   基于element ui 和VUE的django admin主题
+haystack django     模块化搜索方案
+django notifications    发送消息通知，你有xx条未处理消息
+django markdown editor  markdown编辑器
+django-crispy-forms     crispy表单，创建美观的表单
+django-simple-captcha   django表单验证码
+'''
+
 INSTALLED_APPS = [
     # 替换默认admin主题
     'grappelli',
@@ -45,11 +57,22 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'jobs',
+    # 'jobs',
+    'jobs.apps.JobConfig',
     'interview',
     # 企业域账号集成
     'django_python3_ldap',
     'rest_framework',
+    # 定时任务
+    'django_celery_beat',
+    # 阿里云OSS，
+    # 'django_oss_storage',
+    # 'running',
+    # 链式关联键
+    'smart_selects',
+    # uncomment the line of "UniversalManagerApp" to automatically register all models
+    # 'recruitment.apps.UniversalManagerApp',
+    'debug_toolbar',
 ]
 
 REST_FRAMEWORK = {
@@ -60,9 +83,15 @@ REST_FRAMEWORK = {
     ]
 }
 
+INTERNAL_IPS = [
+    '127.0.0.1',
+]
+
 MIDDLEWARE = [
     # 自定义中间件
     'interview.performance.PerformanceAndExceptionLoggerMiddleware',
+    # dubug toolbar中间件
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     # 多语言中间件
@@ -106,9 +135,18 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    },
+    # 'running': {
+    #         'ENGINE': 'django.db.backends.mysql',
+    #         'NAME': 'running',
+    #         'USER': 'recruitment',
+    #         'PASSWORD': 'recruitment',
+    #         'HOST': 'running',
+    #         'PORT': '3306',
+    # },
 }
 
+# DATABASE_ROUTERS = ['settings.router.DatabaseRouter']
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
 
@@ -158,6 +196,10 @@ USE_L10N = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+# STATIC_ROOT = 'static'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
 
 LOGGING = {
     'version': 1,

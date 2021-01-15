@@ -188,3 +188,430 @@ django.http.response.Http404: 没有找到符合查询的 简历
 2021-01-14 18:30:59,104 interview.performance 38 INFO     0.022617578506469727 /admin/jsi18n/ {}
 2021-01-14 18:31:12,925 interview.performance 38 INFO     6.233999967575073 /admin/interview/candidate/ {}
 2021-01-14 18:31:13,110 interview.performance 38 INFO     0.16305208206176758 /admin/interview/candidate/ {}
+2021-01-15 13:20:32,181 interview.performance 38 INFO     0.20800113677978516 / {}
+2021-01-15 13:20:32,681 interview.performance 38 INFO     0.1640009880065918 /favicon.ico {}
+2021-01-15 13:26:19,380 interview.performance 38 INFO     0.1176145076751709 /admin/ {}
+2021-01-15 13:26:19,917 interview.performance 38 INFO     0.026673555374145508 /admin/ {}
+2021-01-15 13:26:32,857 interview.performance 38 INFO     0.12501287460327148 /admin/django_celery_beat/intervalschedule/ {}
+2021-01-15 13:26:32,959 interview.performance 38 INFO     0.028388500213623047 /admin/jsi18n/ {}
+2021-01-15 13:26:36,782 interview.performance 38 INFO     0.025692224502563477 /admin/ {}
+2021-01-15 13:26:54,158 interview.performance 38 INFO     0.051053524017333984 /admin/django_celery_beat/crontabschedule/ {}
+2021-01-15 13:26:58,141 interview.performance 38 INFO     0.13054466247558594 /admin/django_celery_beat/crontabschedule/1/change/ {}
+2021-01-15 13:27:00,276 interview.performance 38 INFO     0.0466456413269043 /admin/django_celery_beat/crontabschedule/ {}
+2021-01-15 13:27:02,814 interview.performance 38 INFO     0.025969266891479492 /admin/ {}
+2021-01-15 13:27:05,938 interview.performance 38 INFO     0.07908248901367188 /admin/django_celery_beat/periodictask/ {}
+2021-01-15 13:27:13,641 interview.performance 38 INFO     0.15181493759155273 /admin/django_celery_beat/periodictask/add/ {}
+2021-01-15 13:27:41,603 interview.performance 38 INFO     0.031002521514892578 /admin/django_celery_beat/ {}
+2021-01-15 13:28:16,096 interview.performance 38 INFO     0.03454470634460449 /admin/ {}
+2021-01-15 13:47:04,835 interview.performance 38 INFO     0.09099650382995605 /admin/ {}
+2021-01-15 13:47:06,840 interview.performance 38 INFO     0.05899953842163086 /admin/django_celery_beat/intervalschedule/ {}
+2021-01-15 13:47:07,043 interview.performance 38 INFO     0.012006998062133789 /admin/jsi18n/ {}
+2021-01-15 13:47:08,249 interview.performance 38 INFO     0.0270078182220459 /admin/ {}
+2021-01-15 13:47:09,346 interview.performance 38 INFO     0.041045427322387695 /admin/django_celery_beat/intervalschedule/ {}
+2021-01-15 13:47:10,273 interview.performance 38 INFO     0.024007558822631836 /admin/ {}
+2021-01-15 13:47:11,487 interview.performance 38 INFO     0.03403472900390625 /admin/django_celery_beat/clockedschedule/ {}
+2021-01-15 13:47:12,287 interview.performance 38 INFO     0.0279996395111084 /admin/ {}
+2021-01-15 13:47:13,183 interview.performance 38 INFO     0.02399921417236328 /admin/django_celery_beat/ {}
+2021-01-15 13:47:15,176 interview.performance 38 INFO     0.05900406837463379 /admin/django_celery_beat/periodictask/ {}
+2021-01-15 13:47:27,313 interview.performance 38 INFO     0.02404618263244629 /admin/django_celery_beat/ {}
+2021-01-15 14:03:40,031 interview.performance 38 INFO     0.07892680168151855 /admin/django_celery_beat/ {}
+2021-01-15 14:03:40,885 interview.performance 38 INFO     0.026424407958984375 /admin/ {}
+2021-01-15 14:03:44,016 interview.performance 38 INFO     0.06339287757873535 /admin/django_celery_beat/periodictask/ {}
+2021-01-15 14:03:44,090 interview.performance 38 INFO     0.013120412826538086 /admin/jsi18n/ {}
+2021-01-15 14:03:46,768 interview.performance 38 INFO     0.026803255081176758 /admin/ {}
+2021-01-15 14:15:00,224 interview.performance 55 WARNING  url:http://127.0.0.1:8000/admin/jobs/resume/ ** msg:OperationalError('no such column: jobs_resume.picture') ````Traceback (most recent call last):
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\backends\sqlite3\base.py", line 413, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: jobs_resume.picture
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\sentry_sdk\integrations\django\views.py", line 67, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\contrib\admin\options.py", line 614, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\contrib\admin\options.py", line 1811, in changelist_view
+    'selection_note': _('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\models\query.py", line 269, in __len__
+    self._fetch_all()
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\models\query.py", line 1308, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\models\query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\models\sql\compiler.py", line 1156, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\sentry_sdk\integrations\django\__init__.py", line 489, in execute
+    return real_execute(self, sql, params)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\backends\sqlite3\base.py", line 413, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: jobs_resume.picture
+````
+2021-01-15 14:15:00,639 interview.performance 38 INFO     0.5737524032592773 /admin/jobs/resume/ {}
+2021-01-15 14:15:07,534 interview.performance 38 INFO     0.04296469688415527 /admin/ {}
+2021-01-15 14:15:10,079 interview.performance 55 WARNING  url:http://127.0.0.1:8000/admin/jobs/resume/ ** msg:OperationalError('no such column: jobs_resume.picture') ````Traceback (most recent call last):
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\backends\sqlite3\base.py", line 413, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: jobs_resume.picture
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\sentry_sdk\integrations\django\views.py", line 67, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\contrib\admin\options.py", line 614, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\contrib\admin\options.py", line 1811, in changelist_view
+    'selection_note': _('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\models\query.py", line 269, in __len__
+    self._fetch_all()
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\models\query.py", line 1308, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\models\query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\models\sql\compiler.py", line 1156, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\sentry_sdk\integrations\django\__init__.py", line 489, in execute
+    return real_execute(self, sql, params)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\backends\sqlite3\base.py", line 413, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: jobs_resume.picture
+````
+2021-01-15 14:15:10,271 interview.performance 38 INFO     0.19950413703918457 /admin/jobs/resume/ {}
+2021-01-15 14:15:25,930 interview.performance 38 INFO     0.0010056495666503906 /resume/add {}
+2021-01-15 14:15:25,995 interview.performance 55 WARNING  url:http://127.0.0.1:8000/resume/add/ ** msg:FieldError('Unknown field(s) (attachement) specified for Resume') ````Traceback (most recent call last):
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\sentry_sdk\integrations\django\views.py", line 67, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\contrib\auth\mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\views\generic\edit.py", line 168, in get
+    return super().get(request, *args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\views\generic\edit.py", line 133, in get
+    return self.render_to_response(self.get_context_data())
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\views\generic\edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\views\generic\edit.py", line 32, in get_form
+    form_class = self.get_form_class()
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\views\generic\edit.py", line 101, in get_form_class
+    return model_forms.modelform_factory(model, fields=self.fields)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\forms\models.py", line 555, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\forms\models.py", line 268, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (attachement) specified for Resume
+````
+2021-01-15 14:15:26,179 interview.performance 38 INFO     0.22468113899230957 /resume/add/ {}
+2021-01-15 14:15:45,026 interview.performance 38 INFO     0.04700803756713867 / {}
+2021-01-15 14:15:48,922 interview.performance 38 INFO     0.012000322341918945 /joblist/ {}
+2021-01-15 14:15:52,351 interview.performance 38 INFO     0.05621695518493652 /job/1/ {}
+2021-01-15 14:15:53,740 interview.performance 55 WARNING  url:http://127.0.0.1:8000/resume/add/?apply_position=%E9%9F%B3%E8%A7%86%E9%A2%91%E5%B7%A5%E7%A8%8B%E5%B8%88&city=%E4%B8%8A%E6%B5%B7 ** msg:FieldError('Unknown field(s) (attachement) specified for Resume') ````Traceback (most recent call last):
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\sentry_sdk\integrations\django\views.py", line 67, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\contrib\auth\mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\views\generic\edit.py", line 168, in get
+    return super().get(request, *args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\views\generic\edit.py", line 133, in get
+    return self.render_to_response(self.get_context_data())
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\views\generic\edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\views\generic\edit.py", line 32, in get_form
+    form_class = self.get_form_class()
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\views\generic\edit.py", line 101, in get_form_class
+    return model_forms.modelform_factory(model, fields=self.fields)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\forms\models.py", line 555, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\forms\models.py", line 268, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (attachement) specified for Resume
+````
+2021-01-15 14:15:53,918 interview.performance 38 INFO     0.18572139739990234 /resume/add/ {'apply_position': '音视频工程师', 'city': '上海'}
+2021-01-15 14:15:56,299 interview.performance 38 INFO     0.11512565612792969 /accounts/logout/ {}
+2021-01-15 14:15:57,625 interview.performance 38 INFO     0.02904534339904785 /accounts/login/ {}
+2021-01-15 14:16:05,874 interview.performance 38 INFO     0.4812188148498535 /accounts/login/ {}
+2021-01-15 14:16:05,905 interview.performance 38 INFO     0.012997865676879883 / {}
+2021-01-15 14:16:06,858 interview.performance 38 INFO     0.016005277633666992 /job/1/ {}
+2021-01-15 14:16:08,074 interview.performance 55 WARNING  url:http://127.0.0.1:8000/resume/add/?apply_position=%E9%9F%B3%E8%A7%86%E9%A2%91%E5%B7%A5%E7%A8%8B%E5%B8%88&city=%E4%B8%8A%E6%B5%B7 ** msg:FieldError('Unknown field(s) (attachement) specified for Resume') ````Traceback (most recent call last):
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\sentry_sdk\integrations\django\views.py", line 67, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\contrib\auth\mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\views\generic\edit.py", line 168, in get
+    return super().get(request, *args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\views\generic\edit.py", line 133, in get
+    return self.render_to_response(self.get_context_data())
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\views\generic\edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\views\generic\edit.py", line 32, in get_form
+    form_class = self.get_form_class()
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\views\generic\edit.py", line 101, in get_form_class
+    return model_forms.modelform_factory(model, fields=self.fields)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\forms\models.py", line 555, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\forms\models.py", line 268, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (attachement) specified for Resume
+````
+2021-01-15 14:16:08,254 interview.performance 38 INFO     0.18913698196411133 /resume/add/ {'apply_position': '音视频工程师', 'city': '上海'}
+2021-01-15 14:16:56,345 interview.performance 38 INFO     0.15106463432312012 /resume/add/ {'apply_position': '音视频工程师', 'city': '上海'}
+2021-01-15 14:17:29,087 interview.performance 38 INFO     0.03340888023376465 /admin/ {}
+2021-01-15 14:17:29,281 interview.performance 38 INFO     0.17088079452514648 /admin/login/ {'next': '/admin/'}
+2021-01-15 14:17:29,610 interview.performance 38 INFO     0.0050199031829833984 /admin/ {}
+2021-01-15 14:17:29,650 interview.performance 38 INFO     0.020400285720825195 /admin/login/ {'next': '/admin/'}
+2021-01-15 14:17:33,454 interview.performance 38 INFO     0.3969271183013916 /admin/login/ {'next': '/admin/'}
+2021-01-15 14:17:33,505 interview.performance 38 INFO     0.031186342239379883 /admin/ {}
+2021-01-15 14:17:44,716 interview.performance 55 WARNING  url:http://127.0.0.1:8000/admin/jobs/resume/ ** msg:OperationalError('no such column: jobs_resume.picture') ````Traceback (most recent call last):
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\backends\sqlite3\base.py", line 413, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: jobs_resume.picture
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\sentry_sdk\integrations\django\views.py", line 67, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\contrib\admin\options.py", line 614, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\contrib\admin\options.py", line 1811, in changelist_view
+    'selection_note': _('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\models\query.py", line 269, in __len__
+    self._fetch_all()
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\models\query.py", line 1308, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\models\query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\models\sql\compiler.py", line 1156, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\sentry_sdk\integrations\django\__init__.py", line 489, in execute
+    return real_execute(self, sql, params)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\backends\sqlite3\base.py", line 413, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: jobs_resume.picture
+````
+2021-01-15 14:17:45,013 interview.performance 38 INFO     0.31375622749328613 /admin/jobs/resume/ {}
+2021-01-15 14:17:49,044 interview.performance 38 INFO     0.02373790740966797 /admin/ {}
+2021-01-15 14:17:51,149 interview.performance 55 WARNING  url:http://127.0.0.1:8000/admin/jobs/resume/ ** msg:OperationalError('no such column: jobs_resume.picture') ````Traceback (most recent call last):
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\backends\sqlite3\base.py", line 413, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: jobs_resume.picture
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\sentry_sdk\integrations\django\views.py", line 67, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\contrib\admin\options.py", line 614, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\contrib\admin\options.py", line 1811, in changelist_view
+    'selection_note': _('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\models\query.py", line 269, in __len__
+    self._fetch_all()
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\models\query.py", line 1308, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\models\query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\models\sql\compiler.py", line 1156, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\sentry_sdk\integrations\django\__init__.py", line 489, in execute
+    return real_execute(self, sql, params)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\db\backends\sqlite3\base.py", line 413, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: jobs_resume.picture
+````
+2021-01-15 14:17:51,363 interview.performance 38 INFO     0.22277474403381348 /admin/jobs/resume/ {}
+2021-01-15 14:18:45,223 interview.performance 38 INFO     0.05599570274353027 /admin/jobs/resume/ {}
+2021-01-15 14:18:45,313 interview.performance 38 INFO     0.015000104904174805 /admin/jsi18n/ {}
+2021-01-15 14:18:47,371 interview.performance 38 INFO     0.06600093841552734 /admin/jobs/resume/3/change/ {}
+2021-01-15 14:18:51,385 interview.performance 38 INFO     0.08604741096496582 /admin/jobs/resume/ {}
+2021-01-15 14:18:54,532 interview.performance 38 INFO     0.05904698371887207 /admin/jobs/resume/add/ {}
+2021-01-15 14:18:59,051 interview.performance 38 INFO     0.04606223106384277 /admin/jobs/resume/ {}
+2021-01-15 14:19:00,313 interview.performance 38 INFO     0.03801774978637695 /admin/ {}
+2021-01-15 14:20:10,974 interview.performance 38 INFO     0.10196447372436523 /admin/jobs/job/ {}
+2021-01-15 14:20:12,049 interview.performance 38 INFO     0.025005340576171875 /admin/ {}
+2021-01-15 14:20:13,186 interview.performance 38 INFO     0.04904007911682129 /admin/jobs/resume/ {}
+2021-01-15 14:20:14,344 interview.performance 38 INFO     0.07799887657165527 /admin/jobs/resume/3/change/ {}
+2021-01-15 14:20:16,711 interview.performance 38 INFO     0.04905247688293457 /admin/jobs/resume/ {}
+2021-01-15 14:24:23,214 interview.performance 38 INFO     0.14832115173339844 /admin/jobs/resume/3/change/ {}
+2021-01-15 14:24:37,661 interview.performance 38 INFO     0.28513097763061523 /admin/jobs/resume/3/change/ {}
+2021-01-15 14:24:37,746 interview.performance 38 INFO     0.055910587310791016 /admin/jobs/resume/ {}
+2021-01-15 14:24:40,004 interview.performance 38 INFO     0.053163766860961914 /admin/jobs/resume/ {}
+2021-01-15 14:25:04,066 interview.performance 38 INFO     0.11100292205810547 /admin/jobs/resume/ {}
+2021-01-15 14:25:04,138 interview.performance 38 INFO     0.0019998550415039062 /media/images/37864.jpg {}
+2021-01-15 14:25:07,059 interview.performance 38 INFO     0.07399964332580566 /admin/jobs/resume/3/change/ {}
+2021-01-15 14:25:13,041 interview.performance 38 INFO     0.047989845275878906 /admin/jobs/resume/ {}
+2021-01-15 16:31:16,238 interview.performance 38 INFO     0.21413159370422363 /admin/jobs/resume/ {}
+2021-01-15 16:31:16,315 interview.performance 38 INFO     0.014998197555541992 /admin/jsi18n/ {}
+2021-01-15 16:31:16,348 interview.performance 38 INFO     0.0029625892639160156 /media/images/37864.jpg {}
+2021-01-15 16:31:20,861 interview.performance 38 INFO     0.10632085800170898 /admin/jobs/resume/3/change/ {}
+2021-01-15 16:31:28,185 interview.performance 38 INFO     0.34392285346984863 /admin/jobs/resume/3/change/ {}
+2021-01-15 16:31:28,253 interview.performance 38 INFO     0.04912543296813965 /admin/jobs/resume/ {}
+2021-01-15 17:23:57,310 interview.performance 38 INFO     0.37032270431518555 /admin/ {}
+2021-01-15 17:24:01,514 interview.performance 38 INFO     0.06462788581848145 /admin/ {}
+2021-01-15 17:24:10,250 interview.performance 38 INFO     0.04020857810974121 /admin/ {}
+2021-01-15 17:25:16,504 interview.performance 38 INFO     0.3230001926422119 / {}
+2021-01-15 17:25:21,643 interview.performance 38 INFO     0.05300593376159668 /admin/ {}
+2021-01-15 17:25:22,157 interview.performance 38 INFO     0.04695773124694824 /admin/ {}
+2021-01-15 17:25:26,952 interview.performance 38 INFO     0.042038917541503906 /admin/ {}
+2021-01-15 17:26:43,699 interview.performance 38 INFO     0.24004197120666504 /admin/ {}
+2021-01-15 17:26:48,896 interview.performance 38 INFO     0.04199385643005371 /admin/ {}
+2021-01-15 17:26:49,142 interview.performance 38 INFO     0.03894948959350586 /favicon.ico {}
+2021-01-15 17:26:51,826 interview.performance 38 INFO     0.036040306091308594 /admin/ {}
+2021-01-15 17:26:51,991 interview.performance 38 INFO     0.020997285842895508 /favicon.ico {}
+2021-01-15 17:26:52,688 interview.performance 38 INFO     0.04200553894042969 /admin/ {}
+2021-01-15 17:26:52,883 interview.performance 38 INFO     0.041001319885253906 /favicon.ico {}
+2021-01-15 17:26:52,896 interview.performance 38 INFO     0.05298900604248047 /admin/ {}
+2021-01-15 17:26:53,104 interview.performance 38 INFO     0.03600001335144043 /admin/ {}
+2021-01-15 17:26:53,309 interview.performance 38 INFO     0.05800032615661621 /admin/ {}
+2021-01-15 17:26:53,464 interview.performance 38 INFO     0.043000221252441406 /admin/ {}
+2021-01-15 17:26:53,596 interview.performance 38 INFO     0.05199122428894043 /admin/ {}
+2021-01-15 17:26:53,757 interview.performance 38 INFO     0.021009206771850586 /favicon.ico {}
+2021-01-15 17:27:09,019 interview.performance 38 INFO     0.022043228149414062 /__debug__/ {}
+2021-01-15 17:27:33,289 interview.performance 38 INFO     0.0010099411010742188 /__debug__/history_sidebar {}
+2021-01-15 17:27:33,324 interview.performance 55 WARNING  url:http://127.0.0.1:8000/__debug__/history_sidebar/ ** msg:Http404() ````Traceback (most recent call last):
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\sentry_sdk\integrations\django\views.py", line 67, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\debug_toolbar\decorators.py", line 13, in inner
+    raise Http404
+django.http.response.Http404
+````
+2021-01-15 17:27:33,512 interview.performance 38 INFO     0.20468783378601074 /__debug__/history_sidebar/ {}
+2021-01-15 17:30:18,523 interview.performance 55 WARNING  url:http://127.0.0.1:8000/__debug__/history_sidebar/ ** msg:Http404() ````Traceback (most recent call last):
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\sentry_sdk\integrations\django\views.py", line 67, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+  File "C:\Users\sqw12\.virtualenvs\Django_rapid_program-979I0A3D\lib\site-packages\debug_toolbar\decorators.py", line 13, in inner
+    raise Http404
+django.http.response.Http404
+````
+2021-01-15 17:30:18,698 interview.performance 38 INFO     0.3691127300262451 /__debug__/history_sidebar/ {}
+2021-01-15 17:30:22,990 interview.performance 38 INFO     0.08200955390930176 /admin/ {}
+2021-01-15 17:30:23,555 interview.performance 38 INFO     0.04000258445739746 /admin/ {}
+2021-01-15 17:32:00,981 interview.performance 38 INFO     0.36197710037231445 /admin/ {}
+2021-01-15 17:35:28,853 interview.performance 38 INFO     0.5740675926208496 / {}
+2021-01-15 17:35:31,895 interview.performance 38 INFO     0.36499857902526855 /admin/ {}
+2021-01-15 17:35:32,399 interview.performance 38 INFO     0.3049924373626709 /admin/ {}

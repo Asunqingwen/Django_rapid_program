@@ -25,6 +25,11 @@ django-redis = "*"
 flower = "*"
 celery = {extras = ["auth", "msgpack", "redis"], version = "==4.4.7"}
 eventlet = "*"
+django-celery-beat = "*"
+pillow = "*"
+django-oss-storage = "*"
+django-smart-selects = "*"
+django-debug-toolbar = "*"
 
 [requires]
 python_version = "3.7"

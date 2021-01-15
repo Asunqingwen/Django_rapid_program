@@ -1,4 +1,6 @@
 from django.contrib import admin
+from django.utils.html import format_html
+
 from .models import Job, Resume
 from interview.models import Candidate
 from datetime import datetime
@@ -48,10 +50,19 @@ class ResumeAdmin(admin.ModelAdmin):
     '''
     actions = [enter_interview_process, ]
 
+    def image_tag(self, obj):
+        if obj.picture:
+            return format_html('<img src="{}" style="width:100px;height:80px;"/>'.format(obj.picture.url))
+        return ""
+
+    image_tag.allow_tags = True
+    image_tag.short_description = 'Image'
+
     # exclude = ('applicant', 'created_date', 'modified_date')
 
     list_display = (
-        'username', 'applicant', 'city', 'apply_position', 'bachelor_school', 'master_school', 'doctor_school', 'major',
+        'username', 'applicant', 'city', 'apply_position', 'bachelor_school', 'master_school', 'image_tag',
+        'doctor_school', 'major',
         'created_date')
 
     readonly_fields = ('applicant', 'created_date', 'modified_date')
@@ -59,7 +70,7 @@ class ResumeAdmin(admin.ModelAdmin):
     fieldsets = (
         (None, {'fields': (
             "applicant", ("username", "city", "phone", "gender"), ("email", "apply_position", "born_address"),
-            ('bachelor_school', 'master_school', 'doctor_school'), ("major", "degree"),
+            ('bachelor_school', 'master_school', 'doctor_school'), ("major", "degree"), ("picture", "attachment"),
             ('created_date', 'modified_date'),
             "candidate_introduction", "work_experience", "project_experience",
         )}),
