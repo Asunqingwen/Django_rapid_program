@@ -45,6 +45,7 @@ django-simple-captcha   django表单验证码
 '''
 
 INSTALLED_APPS = [
+    'simpleui',
     # 替换默认admin主题
     'grappelli',
     # web页面样式
@@ -72,7 +73,7 @@ INSTALLED_APPS = [
     'smart_selects',
     # uncomment the line of "UniversalManagerApp" to automatically register all models
     # 'recruitment.apps.UniversalManagerApp',
-    'debug_toolbar',
+    # 'debug_toolbar',
 ]
 
 REST_FRAMEWORK = {
@@ -91,7 +92,7 @@ MIDDLEWARE = [
     # 自定义中间件
     'interview.performance.PerformanceAndExceptionLoggerMiddleware',
     # dubug toolbar中间件
-    'debug_toolbar.middleware.DebugToolbarMiddleware',
+    # 'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     # 多语言中间件

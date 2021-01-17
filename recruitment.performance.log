@@ -615,3 +615,32 @@ django.http.response.Http404
 2021-01-15 17:35:28,853 interview.performance 38 INFO     0.5740675926208496 / {}
 2021-01-15 17:35:31,895 interview.performance 38 INFO     0.36499857902526855 /admin/ {}
 2021-01-15 17:35:32,399 interview.performance 38 INFO     0.3049924373626709 /admin/ {}
+2021-01-16 18:28:09,930 interview.performance 38 INFO     0.22480487823486328 / {}
+2021-01-16 18:28:10,380 interview.performance 38 INFO     0.12248086929321289 /favicon.ico {}
+2021-01-16 18:28:19,608 interview.performance 38 INFO     0.10920429229736328 /admin/ {}
+2021-01-16 18:28:19,887 interview.performance 38 INFO     0.10205698013305664 /favicon.ico {}
+2021-01-16 18:29:38,006 interview.performance 38 INFO     0.2644617557525635 /admin/ {}
+2021-01-16 18:29:38,222 interview.performance 38 INFO     0.19817709922790527 /admin/login/ {'next': '/admin/'}
+2021-01-16 18:29:38,618 interview.performance 38 INFO     0.10309791564941406 /favicon.ico {}
+2021-01-16 18:29:42,210 interview.performance 38 INFO     0.4632718563079834 /admin/login/ {'next': '/admin/'}
+2021-01-16 18:29:42,464 interview.performance 38 INFO     0.23599791526794434 /admin/ {}
+2021-01-16 18:31:15,010 interview.performance 38 INFO     0.20061111450195312 /admin/ {}
+2021-01-16 18:31:19,370 interview.performance 38 INFO     0.09165620803833008 /__debug__/render_panel/ {'store_id': 'de6a955832ba41cca8e16c0f7956a548', 'panel_id': 'HeadersPanel'}
+2021-01-16 18:31:29,271 interview.performance 38 INFO     1.4863760471343994 /admin/interview/candidate/ {}
+2021-01-16 18:31:30,753 interview.performance 38 INFO     1.9449269771575928 /admin/interview/candidate/ {}
+2021-01-16 18:31:31,052 interview.performance 38 INFO     0.22537994384765625 /admin/jsi18n/ {}
+2021-01-16 18:31:38,290 interview.performance 38 INFO     0.4391348361968994 /__debug__/render_panel/ {'store_id': 'a5d533e37bbf470f8c2b7f0b0cfc60a4', 'panel_id': 'SQLPanel'}
+2021-01-16 18:34:48,371 interview.performance 38 INFO     0.2552649974822998 / {}
+2021-01-17 17:30:41,576 interview.performance 38 INFO     0.3850390911102295 /admin/ {}
+2021-01-17 17:31:38,825 interview.performance 38 INFO     0.040067195892333984 /__debug__/render_panel/ {'store_id': '632a28278f9540eea6e0cec8306fab39', 'panel_id': 'TemplatesPanel'}
+2021-01-17 17:31:48,860 interview.performance 38 INFO     0.0402219295501709 /__debug__/render_panel/ {'store_id': '632a28278f9540eea6e0cec8306fab39', 'panel_id': 'CachePanel'}
+2021-01-17 17:32:04,240 interview.performance 38 INFO     0.047429800033569336 /__debug__/render_panel/ {'store_id': '632a28278f9540eea6e0cec8306fab39', 'panel_id': 'SignalsPanel'}
+2021-01-17 17:35:32,685 interview.performance 38 INFO     0.38439512252807617 /admin/ {}
+2021-01-17 17:35:44,994 interview.performance 38 INFO     0.30927491188049316 /admin/jobs/resume/ {}
+2021-01-17 17:35:45,260 interview.performance 38 INFO     0.19495010375976562 /admin/jsi18n/ {}
+2021-01-17 17:36:06,672 interview.performance 38 INFO     0.24643397331237793 /admin/ {}
+2021-01-17 17:36:07,201 interview.performance 38 INFO     0.3171820640563965 /admin/jobs/resume/ {}
+2021-01-17 17:36:30,168 interview.performance 38 INFO     1.5892138481140137 /admin/interview/candidate/ {}
+2021-01-17 17:36:54,433 interview.performance 38 INFO     0.6224262714385986 /admin/interview/candidate/3/change/ {}
+2021-01-17 17:37:49,557 interview.performance 38 INFO     0.22422385215759277 /admin/ {}
+2021-01-17 17:37:49,940 interview.performance 38 INFO     0.19817709922790527 /admin/interview/candidate/ {}

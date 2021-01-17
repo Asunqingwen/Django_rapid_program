@@ -22,8 +22,8 @@ djangorestframework = "*"
 markdown = "*"
 django-filter = "*"
 django-redis = "*"
-flower = "*"
 celery = {extras = ["auth", "msgpack", "redis"], version = "==4.4.7"}
+flower = "*"
 eventlet = "*"
 django-celery-beat = "*"
 pillow = "*"
@@ -32,7 +32,7 @@ django-smart-selects = "*"
 django-debug-toolbar = "*"
 
 [requires]
-python_version = "3.7"
+python_version = "3.8"
 
 [pipenv]
 allow_prereleases = true
