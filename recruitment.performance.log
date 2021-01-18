@@ -644,3 +644,5 @@ django.http.response.Http404
 2021-01-17 17:36:54,433 interview.performance 38 INFO     0.6224262714385986 /admin/interview/candidate/3/change/ {}
 2021-01-17 17:37:49,557 interview.performance 38 INFO     0.22422385215759277 /admin/ {}
 2021-01-17 17:37:49,940 interview.performance 38 INFO     0.19817709922790527 /admin/interview/candidate/ {}
+2021-01-18 11:20:10,654 interview.performance 38 INFO     0.14074325561523438 /job/1/ {}
+2021-01-18 11:20:10,677 interview.performance 38 INFO     0.010999917984008789 /joblist/ {}

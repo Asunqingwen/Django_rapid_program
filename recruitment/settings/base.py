@@ -37,11 +37,10 @@ LOGIN_REDIRECT_URL = '/'
 django debug toolbar  提供一个debug信息查看界面
 django-silk     性能瓶颈分析
 simple ui   基于element ui 和VUE的django admin主题
-haystack django     模块化搜索方案
-django notifications    发送消息通知，你有xx条未处理消息
-django markdown editor  markdown编辑器
+haystack django     模块化搜索方案 
 django-crispy-forms     crispy表单，创建美观的表单
 django-simple-captcha   django表单验证码
+django-prometheus   监控插件
 '''
 
 INSTALLED_APPS = [

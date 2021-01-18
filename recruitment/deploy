@@ -1,0 +1,12 @@
+1、单元测试
+2、KMS系统——保存配置文件
+3、安全检查——python manage.py check --deploy
+4、容器——异步：uvicorn；同步：gunicorn
+5、代理服务器——nginx；Tengine
+6、加速网站——CDN服务
+7、监控和报警——sentry；PrometheUS & grafana
+8、let's encrypt免费SSL证书
+9、数据加密，日志脱敏
+10、使用阿里云docker镜像加速服务，加速image下载
+11、gogs——开源git仓库，可用docker安装，用于内部代码管理
+12、代码容器化步骤——1、更改代码，适配容器；2、创建Dockerfile;3、构建镜像；4、运行容器
